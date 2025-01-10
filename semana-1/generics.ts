@@ -60,3 +60,67 @@ const sum :CalculateSum<number> ={
    }, 
    value: 0
 }
+
+
+// classes
+
+class CalculateSumClass<T> {
+    value: T
+    add: (x: T, y: T) => T
+}
+
+const sumClass = new CalculateSumClass<number>()
+sumClass.value = 0
+sumClass.add = (x, y) => x + y
+
+console.log(sum.add(2, 3))
+
+
+
+
+
+export class UniqueEntityID {
+  private value: string;
+
+  toString() {
+    return this.value;
+  }
+
+  toValue() {
+    return this.value;
+  }
+
+  constructor(value?: string) {
+    this.value = value ?? Math.ceil(Math.random() * 99999999999999.999).toString();
+  }
+
+  equals(id: UniqueEntityID) {
+    return id.toValue() == this.value;
+  }
+}
+
+export abstract class Entity<Props> {
+  private _id: UniqueEntityID;
+  protected props: Props;
+
+  protected constructor(props: Props, id?: UniqueEntityID) {
+    this._id = id ?? new UniqueEntityID();
+    this.props = props;
+  }
+
+  get id() {
+    return this._id;
+  }
+
+  equals(entity: Entity<any>) {
+    if (entity.id == this._id) {
+      return true;
+    }
+
+    if (entity == this) {
+      return true;
+    }
+
+    return false;
+  }
+}
