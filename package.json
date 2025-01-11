@@ -1,0 +1,23 @@
+{
+  "name": "guia-de-estudo",
+  "version": "1.0.0",
+  "description": "Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack TypeScript, abrangendo back-end, front-end e boas práticas de desenvolvimento. Cada semana está organizada com tópicos diários para otimizar seu tempo de estudo de 4 horas por dia, 5 dias por semana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrytos/guia-de-estudo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrytos/guia-de-estudo/issues"
+  },
+  "homepage": "https://github.com/Henrytos/guia-de-estudo#readme",
+  "dependencies": {
+    "tsx": "^4.19.2"
+  }
+}
