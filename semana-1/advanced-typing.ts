@@ -65,3 +65,15 @@ const user2: typeof user = {
 
 console.log({ user });
 console.log({ user2 });
+
+function logValue<T>(value: T): T {
+  console.log(value);
+
+  return value;
+}
+
+const typeString: ReturnType<typeof logValue> = "123";
+
+// typeof = extrai a tipagem
+// keyof extrai os valores da chave do objeto
+// ReturnType extrai tipagem de retorno de uma função de interface
