@@ -77,3 +77,13 @@ const typeString: ReturnType<typeof logValue> = "123";
 // typeof = extrai a tipagem
 // keyof extrai os valores da chave do objeto
 // ReturnType extrai tipagem de retorno de uma função de interface
+
+function f() {
+  return { x: 10, y: 3 };
+}
+
+const functionType: typeof f = () => {
+  return { x: 1, y: 1 };
+};
+
+type P = ReturnType<typeof f>;
