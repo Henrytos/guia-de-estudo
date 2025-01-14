@@ -1,7 +1,7 @@
 "use client";
 
 import { fetchPets } from "@/api/fetch-pets";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,10 +11,9 @@ export default function Home() {
     refetchOnWindowFocus: true,
   });
 
-  console.log({
-    data,
-    file: "app",
-  });
+  const mutation = useMutation({
+    mutationFn:
+  })
   return (
     <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10 py-20 ">
       <div className="max-w-6xl m-auto">
