@@ -1,8 +1,10 @@
 "use client";
 import { fetchPets } from "@/api/fetch-pets";
 import { FormSingIn } from "@/components/form-sing-ing";
+import { AuhtUser } from "@/context/auth-user-provider";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
+import { useContext } from "react";
 
 export default function Home() {
   const { data, isPending, isError } = useQuery({
@@ -10,14 +12,16 @@ export default function Home() {
     queryFn: () => fetchPets({}),
   });
 
+  const { isAuthenticate } = useContext(AuhtUser);
+
   return (
     <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10 py-20 ">
       <div className="max-w-6xl m-auto">
         <h1 className="text-2xl font-semibold before:h-6 before:w-1 before:bg-zinc-100 before:block before:absolute before:left-0 before:top-1 relative pl-3 pb-5">
           Pets
         </h1>
-        <FormSingIn />
-        <hr className="mb-10" />
+
+        {!isAuthenticate && <FormSingIn />}
 
         {isPending && <p> carregando </p>}
 
