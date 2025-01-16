@@ -7,21 +7,21 @@ Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack Type
 ## Semana 1: Fundamentos Avançados de TypeScript
 | Dia | Tópico                          | Descrição                                                                | Fonte de Referência                           |
 |-----|--------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
-| 1   | Tipagem Avançada               | Estudo de `keyof`, `typeof` e Mapped Types.                             | [TypeScript Handbook: Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) |
-| 2   | Generics                       | Aprender a criar funções e classes genéricas.                           | [Generics in TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html) |
+| 1   | ✅ Tipagem Avançada               | Estudo de `keyof`, `typeof` e Mapped Types.                             | [TypeScript Handbook: Advanced Types](https://www.typescriptlang.org/docs/handbook/advanced-types.html) |
+| 2   | ✅ Generics                       | Aprender a criar funções e classes genéricas.                           | [Generics in TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html) |
 | 3   | Manipulação de Definições de Tipos | Uso de pacotes com definições em `@types` e personalização de tipos.    | [Defining Types in TS](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html) |
 | 4   | Namespaces e Módulos           | Organização de código com namespaces e ES modules.                      | [Modules in TS](https://www.typescriptlang.org/docs/handbook/modules.html) |
-| 5   | Projeto Prático                | Criar um gerenciador de tarefas CLI com TypeScript, usando boas práticas. | Faça com base nos estudos acima.             |
+| 5   | ✅ Projeto Prático                | Criar um gerenciador de tarefas CLI com TypeScript, usando boas práticas. | Faça com base nos estudos acima.             |
 
 ---
 
 ## Semana 2: Front-end com Next.js e TanStack Query
 | Dia | Tópico                          | Descrição                                                                | Fonte de Referência                           |
 |-----|--------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
-| 1   | Introdução ao TanStack Query   | Gerenciamento de dados com caching e invalidação.                        | [TanStack Query Docs](https://tanstack.com/query/v4) |
-| 2   | Consumo de APIs REST e GraphQL | Usar TanStack Query para consumir APIs com autenticação.                 | [GraphQL with React Query](https://tanstack.com/query/v4/docs/react/examples/graphql) |
+| 1   | ✅ Introdução ao TanStack Query   | Gerenciamento de dados com caching e invalidação.                        | [TanStack Query Docs](https://tanstack.com/query/v4) |
+| 2   | ✅ Consumo de APIs REST e GraphQL | Usar TanStack Query para consumir APIs com autenticação.                 | [GraphQL with React Query](https://tanstack.com/query/v4/docs/react/examples/graphql) |
 | 3   | Autenticação com NextAuth.js   | Configurar login com Google, GitHub e credenciais próprias.              | [NextAuth.js Docs](https://next-auth.js.org/) |
-| 4   | Manipulação de Formulários     | Usar React Hook Form com validação via Zod.                              | [React Hook Form Docs](https://react-hook-form.com/) |
+| 4   | ✅ Manipulação de Formulários     | Usar React Hook Form com validação via Zod.                              | [React Hook Form Docs](https://react-hook-form.com/) |
 | 5   | Projeto Prático                | Criar um dashboard com autenticação e consumo de APIs.                   | Faça com base nos estudos acima.             |
 
 ---
