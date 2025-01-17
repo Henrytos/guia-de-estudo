@@ -1,7 +1,8 @@
 "use client";
 import { fetchPets } from "@/api/fetch-pets";
+import { BunttonSingOut } from "@/components/button-sing-out";
 import { FormSingIn } from "@/components/form-sing-ing";
-import { AuhtUser } from "@/context/auth-user-provider";
+import { AuthUser } from "@/context/auth-user-provider";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import { useContext } from "react";
@@ -12,7 +13,7 @@ export default function Home() {
     queryFn: () => fetchPets({}),
   });
 
-  const { isAuthenticate } = useContext(AuhtUser);
+  const { isAuthenticate } = useContext(AuthUser);
 
   return (
     <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10 py-20 ">
@@ -21,7 +22,9 @@ export default function Home() {
           Pets
         </h1>
 
-        {!isAuthenticate && <FormSingIn />}
+        {isAuthenticate == false && <FormSingIn />}
+
+        {isAuthenticate == true && <BunttonSingOut />}
 
         {isPending && <p> carregando </p>}
 
