@@ -2,8 +2,10 @@
 
 import { fetchPets } from "@/api/fetch-pets";
 import { Header } from "@/components/header";
+import { ModalPetDeails } from "@/context/modal-pet-details-provider";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
+import { useContext } from "react";
 
 export default function Home() {
   const { data, isPending, isError } = useQuery({
@@ -11,6 +13,7 @@ export default function Home() {
     queryFn: () => fetchPets({}),
   });
 
+  const { setCurrentPet, openModal } = useContext(ModalPetDeails);
   return (
     <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10  py-10">
       <div className="max-w-6xl m-auto">
@@ -31,6 +34,10 @@ export default function Home() {
               <div
                 key={pet.id}
                 className="bg-zinc-800 rounded-xl  p-3 col-span-1"
+                onClick={() => {
+                  setCurrentPet(pet);
+                  openModal();
+                }}
               >
                 <Image
                   src={pet.image_url[0]}
