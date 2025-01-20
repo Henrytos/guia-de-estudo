@@ -1,11 +1,9 @@
 "use client";
+
 import { fetchPets } from "@/api/fetch-pets";
-import { BunttonSingOut } from "@/components/button-sing-out";
-import { FormSingIn } from "@/components/form-sing-ing";
-import { AuthUser } from "@/context/auth-user-provider";
+import { Header } from "@/components/header";
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
-import { useContext } from "react";
 
 export default function Home() {
   const { data, isPending, isError } = useQuery({
@@ -13,18 +11,15 @@ export default function Home() {
     queryFn: () => fetchPets({}),
   });
 
-  const { isAuthenticate } = useContext(AuthUser);
-
   return (
-    <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10 py-20 ">
+    <main className="bg-zinc-900 text-zinc-100 w-full min-h-svh px-10  py-10">
       <div className="max-w-6xl m-auto">
-        <h1 className="text-2xl font-semibold before:h-6 before:w-1 before:bg-zinc-100 before:block before:absolute before:left-0 before:top-1 relative pl-3 pb-5">
-          Pets
-        </h1>
-
-        {isAuthenticate == false && <FormSingIn />}
-
-        {isAuthenticate == true && <BunttonSingOut />}
+        <div className="flex justify-between">
+          <h1 className="text-2xl font-semibold before:h-6 before:w-1 before:bg-zinc-100 before:block before:absolute before:left-0 before:top-1 relative pl-3 pb-5">
+            Pets
+          </h1>
+          <Header />
+        </div>
 
         {isPending && <p> carregando </p>}
 
