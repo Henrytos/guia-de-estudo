@@ -1,4 +1,4 @@
-# Plano de Estudos para Desenvolvedor Full-Stack TypeScript
+![image](https://github.com/user-attachments/assets/d11da3c9-b18f-4863-99cf-1560bcf611d5)# Plano de Estudos para Desenvolvedor Full-Stack TypeScript
 
 Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack TypeScript, abrangendo back-end, front-end e boas práticas de desenvolvimento. Cada semana está organizada com tópicos diários para otimizar seu tempo de estudo de 4 horas por dia, 5 dias por semana.
 
@@ -22,15 +22,15 @@ Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack Type
 | 2   | ✅ Consumo de APIs REST e GraphQL | Usar TanStack Query para consumir APIs com autenticação.                 | [GraphQL with React Query](https://tanstack.com/query/v4/docs/react/examples/graphql) |
 | 3   | Autenticação com NextAuth.js   | Configurar login com Google, GitHub e credenciais próprias.              | [NextAuth.js Docs](https://next-auth.js.org/) |
 | 4   | ✅ Manipulação de Formulários     | Usar React Hook Form com validação via Zod.                              | [React Hook Form Docs](https://react-hook-form.com/) |
-| 5   | Projeto Prático                | Criar um dashboard com autenticação e consumo de APIs.                   | Faça com base nos estudos acima.             |
+| 5   | ✅ Projeto Prático                | Criar um dashboard com autenticação e consumo de APIs.                   | Faça com base nos estudos acima.             |
 
 ---
 
 ## Semana 3: Tailwind, shadcn/ui e Animações
 | Dia | Tópico                          | Descrição                                                                | Fonte de Referência                           |
 |-----|--------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
-| 1   | Introdução ao Tailwind CSS     | Estilização com utilitários e personalização de temas.                   | [Tailwind Docs](https://tailwindcss.com/docs) |
-| 2   | shadcn/ui                      | Uso de componentes reutilizáveis e acessíveis.                          | [shadcn/ui Docs](https://ui.shadcn.dev/) |
+| 1   | ✅ Introdução ao Tailwind CSS     | Estilização com utilitários e personalização de temas.                   | [Tailwind Docs](https://tailwindcss.com/docs) |
+| 2   | ✅ shadcn/ui                      | Uso de componentes reutilizáveis e acessíveis.                          | [shadcn/ui Docs](https://ui.shadcn.dev/) |
 | 3   | Introdução ao Framer Motion    | Criar animações e transições interativas.                                | [Framer Motion Docs](https://www.framer.com/motion/) |
 | 4   | Componentização e Boas Práticas | Criar componentes reusáveis e modularizados.                            | [Reusing Components](https://reactjs.org/docs/components-and-props.html) |
 | 5   | Projeto Prático                | Criar uma landing page animada e responsiva.                             | Faça com base nos estudos acima.             |
