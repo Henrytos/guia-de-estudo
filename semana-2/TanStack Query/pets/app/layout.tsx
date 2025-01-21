@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { QueryClientProviderWithClient } from "@/context/query-client-provider";
 import { AuthUserProvider } from "@/context/auth-user-provider";
 import { ModalPetDeailsProvider } from "@/context/modal-pet-details-provider";
