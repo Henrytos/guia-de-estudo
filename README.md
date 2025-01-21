@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d11da3c9-b18f-4863-99cf-1560bcf611d5)# Plano de Estudos para Desenvolvedor Full-Stack TypeScript
+# Plano de Estudos para Desenvolvedor Full-Stack TypeScript
 
 Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack TypeScript, abrangendo back-end, front-end e boas práticas de desenvolvimento. Cada semana está organizada com tópicos diários para otimizar seu tempo de estudo de 4 horas por dia, 5 dias por semana.
 
