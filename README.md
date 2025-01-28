@@ -31,18 +31,18 @@ Este plano é destinado a quem deseja se tornar um desenvolvedor full-stack Type
 |-----|--------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
 | 1   | ✅ Introdução ao Tailwind CSS     | Estilização com utilitários e personalização de temas.                   | [Tailwind Docs](https://tailwindcss.com/docs) |
 | 2   | ✅ shadcn/ui                      | Uso de componentes reutilizáveis e acessíveis.                          | [shadcn/ui Docs](https://ui.shadcn.dev/) |
-| 3   | Introdução ao Framer Motion    | Criar animações e transições interativas.                                | [Framer Motion Docs](https://www.framer.com/motion/) |
-| 4   | Componentização e Boas Práticas | Criar componentes reusáveis e modularizados.                            | [Reusing Components](https://reactjs.org/docs/components-and-props.html) |
-| 5   | Projeto Prático                | Criar uma landing page animada e responsiva.                             | Faça com base nos estudos acima.             |
+| 3   | ✅ Introdução ao Framer Motion    | Criar animações e transições interativas.                                | [Framer Motion Docs](https://www.framer.com/motion/) |
+| 4   | ✅ Componentização e Boas Práticas | Criar componentes reusáveis e modularizados.                            | [Reusing Components](https://reactjs.org/docs/components-and-props.html) |
+| 5   | ✅ Projeto Prático                | Criar uma landing page animada e responsiva.                             | Faça com base nos estudos acima.             |
 
 ---
 
 ## Semana 4: Back-end com NestJS e Prisma
 | Dia | Tópico                          | Descrição                                                                | Fonte de Referência                           |
 |-----|--------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
-| 1   | Configuração Básica do NestJS  | Configurar um projeto do zero com CLI do NestJS.                         | [NestJS Docs](https://docs.nestjs.com/) |
+| 1   | ✅ Configuração Básica do NestJS  | Configurar um projeto do zero com CLI do NestJS.                         | [NestJS Docs](https://docs.nestjs.com/) |
 | 2   | Autenticação com Passport e JWT | Configurar rotas seguras com tokens JWT.                                 | [JWT Auth](https://docs.nestjs.com/security/authentication) |
-| 3   | Relacionamentos Complexos no Prisma | Trabalhar com `@relation` e consultas avançadas.                       | [Prisma Relations](https://www.prisma.io/docs) |
+| 3   | ✅ Relacionamentos Complexos no Prisma | Trabalhar com `@relation` e consultas avançadas.                       | [Prisma Relations](https://www.prisma.io/docs) |
 | 4   | Guards e Interceptors          | Garantir segurança e interceptação de dados nas rotas.                   | [Guards in NestJS](https://docs.nestjs.com/guards) |
 | 5   | Projeto Prático                | Criar uma API com autenticação, roles e Prisma.                          | Faça com base nos estudos acima.             |
 
